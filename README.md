@@ -37,7 +37,7 @@ After steps 1 and 2, the final factor is applied.
 - guides (f.ex. Guide_begin, Guide_end, Guide_percent, Guide_orientation)
 - circle (Circle, CircleAngle, CircleRadius)
 
-To layouting, by default is used bias constraint (**horizontalBias**, **verticalBias**).
+To layouting, by default are used bias constraints (**horizontalBias**, **verticalBias**).
 Internal, layout use helper constraint, left, top, right, bottom:
 - **left** of left side of parent,
 - **top** of top side of parent,
