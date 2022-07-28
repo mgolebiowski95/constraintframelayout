@@ -55,8 +55,8 @@ Layout also introduce something similar to helper in ConstraintLayout like virtu
 If you create group and add children (referenceIds), the children will used this group as parent and all whole calculations will depend of it.
 Flow are used to arrange children like LinearLayout.
 
-## Usage
-**See examples in the app module.**
+## Usage (examples)
+https://github.com/mgolebiowski95/constraintframelayout/tree/master/app/src/main/res/layout
 
 ### Attributes
 | Attribute | Format | Default |
