@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/red_500"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="0"
+            app:ConstraintFrameLayout_measure_constraintHorizontal_weight="1"
+            app:ConstraintFrameLayout_measure_constraintVertical_weight="1" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@color/green_500"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="1"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="1"
+            app:ConstraintFrameLayout_measure_constraintVertical_weight="1" />
+
+    </com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout>
+
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ConstraintFrameLayout_Layout">
+        <attr name="ConstraintFrameLayout_measure_constraintWidth_percent" format="float" />
+        <attr name="ConstraintFrameLayout_measure_constraintHeight_percent" format="float" />
+
+        <attr name="ConstraintFrameLayout_measure_constraintVertical_weight" format="float" />
+        <attr name="ConstraintFrameLayout_measure_constraintHorizontal_weight" format="float" />
+
+        <attr name="ConstraintFrameLayout_measure_constraintWidth_toWidthOf" format="reference" />
+        <attr name="ConstraintFrameLayout_measure_constraintWidth_toHeightOf" format="reference" />
+        <attr name="ConstraintFrameLayout_measure_constraintHeight_toHeightOf" format="reference" />
+        <attr name="ConstraintFrameLayout_measure_constraintHeight_toWidthOf" format="reference" />
+
+        <attr name="ConstraintFrameLayout_measure_constraintDimensionRatio" format="string" />
+
+        <attr name="ConstraintFrameLayout_measure_constraintWidthFactor" format="float" />
+        <attr name="ConstraintFrameLayout_measure_constraintHeightFactor" format="float" />
+
+        <attr name="ConstraintFrameLayout_layout_constraintGuide_begin" format="dimension" />
+        <attr name="ConstraintFrameLayout_layout_constraintGuide_end" format="dimension" />
+        <attr name="ConstraintFrameLayout_layout_constraintGuide_percent" format="float" />
+
+        <attr name="ConstraintFrameLayout_layout_constraintGuide_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="ConstraintFrameLayout_layout_constraintLeft_toLeftOf" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintLeft_toRightOf" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintRight_toRightOf" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintRight_toLeftOf" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintTop_toTopOf" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintTop_toBottomOf" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintBottom_toBottomOf" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintBottom_toTopOf" format="reference" />
+
+        <attr name="ConstraintFrameLayout_layout_constraintCenter_toCenterOf" format="reference" />
+
+        <attr name="ConstraintFrameLayout_layout_constraintHorizontal_bias" format="float" />
+        <attr name="ConstraintFrameLayout_layout_constraintVertical_bias" format="float" />
+
+        <attr name="ConstraintFrameLayout_layout_constraintCircle" format="reference" />
+        <attr name="ConstraintFrameLayout_layout_constraintCircleAngle" format="float" />
+        <attr name="ConstraintFrameLayout_layout_constraintCircleRadius" format="dimension" />
+    </declare-styleable>
+
+</resources>

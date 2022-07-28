@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout
+        android:id="@+id/scene"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipChildren="false">
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Flow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="0"
+            app:Flow_orientation="vertical"
+            app:referenceIds="group_a,group_b,group_c,group_d" />
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Flow
+            android:id="@+id/group_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:Flow_orientation="horizontal"
+            app:referenceIds="a,c,d,b" />
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Flow
+            android:id="@+id/group_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:Flow_orientation="vertical"
+            app:referenceIds="e,f" />
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Group
+            android:id="@+id/group_c"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:ConstraintFrameLayout_measure_constraintHeight_toHeightOf="@id/group_d"
+            app:Flow_orientation="vertical"
+            app:referenceIds="g,h" />
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Group
+            android:id="@+id/group_d"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:Flow_orientation="vertical"
+            app:referenceIds="i,j" />
+
+        <TextView
+            android:id="@+id/a"
+            style="@style/Number"
+            android:background="@color/red_500"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/b"
+            style="@style/Number"
+            android:layout_height="128dp"
+            android:background="@color/green_500"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/c"
+            style="@style/Number"
+            android:background="@color/blue_500"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/d"
+            style="@style/Number"
+            android:alpha="0.75"
+            android:background="@color/yellow_500"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/e"
+            style="@style/Number"
+            android:background="@color/red_500"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/f"
+            style="@style/Number"
+            android:background="@color/green_500"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/g"
+            style="@style/Number"
+            android:background="@color/red_500"
+            android:text="1"
+            app:ConstraintFrameLayout_measure_constraintWidthFactor="1.5" />
+
+        <TextView
+            android:id="@+id/h"
+            style="@style/Number"
+            android:background="@color/green_500"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/i"
+            style="@style/Number"
+            android:background="@color/red_500"
+            android:text="1"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0.25" />
+
+        <TextView
+            android:id="@+id/j"
+            style="@style/Number"
+            android:background="@color/green_500"
+            android:text="2"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0.75"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="0" />
+
+    </com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout>
+
+</layout>

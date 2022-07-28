@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space
+            android:id="@+id/g1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:ConstraintFrameLayout_layout_constraintGuide_begin="50dp"
+            app:ConstraintFrameLayout_layout_constraintGuide_orientation="horizontal" />
+
+        <Space
+            android:id="@+id/g2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:ConstraintFrameLayout_layout_constraintGuide_end="50dp"
+            app:ConstraintFrameLayout_layout_constraintGuide_orientation="horizontal" />
+
+        <Space
+            android:id="@+id/g3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:ConstraintFrameLayout_layout_constraintGuide_begin="50dp"
+            app:ConstraintFrameLayout_layout_constraintGuide_orientation="vertical" />
+
+        <Space
+            android:id="@+id/g4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:ConstraintFrameLayout_layout_constraintGuide_end="50dp"
+            app:ConstraintFrameLayout_layout_constraintGuide_orientation="vertical" />
+
+        <Space
+            android:id="@+id/g5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:ConstraintFrameLayout_layout_constraintGuide_orientation="horizontal"
+            app:ConstraintFrameLayout_layout_constraintGuide_percent="0.4" />
+
+        <Space
+            android:id="@+id/g6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:ConstraintFrameLayout_layout_constraintGuide_orientation="vertical"
+            app:ConstraintFrameLayout_layout_constraintGuide_percent="0.25" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0"
+            app:ConstraintFrameLayout_layout_constraintLeft_toLeftOf="@id/g1" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/red_500"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="1"
+            app:ConstraintFrameLayout_layout_constraintRight_toRightOf="@id/g2" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/green_500"
+            app:ConstraintFrameLayout_layout_constraintTop_toTopOf="@id/g3"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="0" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/blue_500"
+            app:ConstraintFrameLayout_layout_constraintBottom_toBottomOf="@id/g4"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="1" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/yellow_500"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0"
+            app:ConstraintFrameLayout_layout_constraintLeft_toLeftOf="@id/g5"
+            app:ConstraintFrameLayout_layout_constraintTop_toTopOf="@id/g6"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="0" />
+
+    </com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout>
+
+</layout>

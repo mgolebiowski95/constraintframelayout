@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:background="@color/black">
+
+            <com.mgsoftware.constraintframelayout.helper.widget.Flow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:Flow_orientation="vertical"
+                app:referenceIds="a,b,c" />
+
+            <View
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/red_500" />
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_500"
+                android:text="@string/app_name"
+                android:textSize="34sp" />
+
+            <View
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_500"
+                app:ConstraintFrameLayout_measure_constraintVertical_weight="1" />
+
+        </com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:background="@color/black">
+
+            <com.mgsoftware.constraintframelayout.helper.widget.Flow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:Flow_orientation="horizontal"
+                app:referenceIds="d,e,f" />
+
+            <View
+                android:id="@+id/d"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@color/red_500" />
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/green_500"
+                android:text="@string/app_name"
+                android:textSize="34sp" />
+
+            <View
+                android:id="@+id/f"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/blue_500"
+                app:ConstraintFrameLayout_measure_constraintHorizontal_weight="1" />
+
+        </com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout>
+
+    </LinearLayout>
+
+</layout>

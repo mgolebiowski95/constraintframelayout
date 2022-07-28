@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:background="@color/black">
+
+            <com.mgsoftware.constraintframelayout.helper.widget.Flow
+                android:id="@+id/g3"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:ConstraintFrameLayout_layout_constraintVertical_bias="0.75"
+                app:referenceIds="e,f,g,h" />
+
+            <View
+                android:id="@+id/e"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@color/red_500"
+                app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0" />
+
+            <View
+                android:id="@+id/f"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:background="@color/green_500"
+                app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0" />
+
+            <View
+                android:id="@+id/g"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@color/blue_500"
+                app:ConstraintFrameLayout_layout_constraintVertical_bias="0"
+                app:ConstraintFrameLayout_measure_constraintHorizontal_weight="1" />
+
+            <View
+                android:id="@+id/h"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@color/yellow_500"
+                app:ConstraintFrameLayout_measure_constraintHorizontal_weight="1" />
+
+            <View
+                android:id="@+id/i"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@color/yellow_500"
+                app:ConstraintFrameLayout_measure_constraintHorizontal_weight="1" />
+
+        </com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout>
+
+    </LinearLayout>
+
+</layout>

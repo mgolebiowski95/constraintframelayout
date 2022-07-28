@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Flow
+            android:id="@+id/g0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:Flow_orientation="vertical"
+            app:referenceIds="g1,g2" />
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Flow
+            android:id="@+id/g1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0.5"
+            app:ConstraintFrameLayout_measure_constraintVertical_weight="1"
+            app:Flow_orientation="horizontal"
+            app:referenceIds="a,b,c" />
+
+        <View
+            android:id="@+id/a"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/red_500"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="0.25" />
+
+        <View
+            android:id="@+id/b"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/green_500" />
+
+        <View
+            android:id="@+id/c"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/blue_500"
+            app:ConstraintFrameLayout_layout_constraintVertical_bias="0.75" />
+
+        <com.mgsoftware.constraintframelayout.helper.widget.Flow
+            android:id="@+id/g2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0.5"
+            app:Flow_orientation="vertical"
+            app:referenceIds="d,e,f" />
+
+        <View
+            android:id="@+id/d"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/red_500"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0.25" />
+
+        <View
+            android:id="@+id/e"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/green_500" />
+
+        <View
+            android:id="@+id/f"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/blue_500"
+            app:ConstraintFrameLayout_layout_constraintHorizontal_bias="0.75" />
+
+    </com.mgsoftware.constraintframelayout.widget.ConstraintFrameLayout>
+
+</layout>
