@@ -49,3 +49,9 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation "org.mini2Dx:gdx-math:1.9.13"
 }
+
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    baseName = 'constraintframelayout'
+    from android.sourceSets.main.java.srcDirs
+}
